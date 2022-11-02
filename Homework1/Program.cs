@@ -47,7 +47,7 @@ while (!isExit);   // пока НЕ выход
 
 
 
-# regionДругой вариант, с break:
+#region Другой вариант, с break:
 
 //do
 //{

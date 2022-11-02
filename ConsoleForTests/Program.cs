@@ -68,6 +68,3 @@ while (option != value)
         break;
     option = Int32.Parse(input);
 }
-if (option == value)
-{
-    

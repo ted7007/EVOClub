@@ -77,6 +77,7 @@
 //for (int i = 0; i < numbers.Length; i++)
 //{
 //    Console.WriteLine(numbers[i]);
+      ////continue;
 //}
 
 //int i = 0;
@@ -84,6 +85,8 @@
 //{
 //    Console.WriteLine(numbers[i]);
 //    i++;
+//    if(numbers[i] == 3)
+//        break;
 //}
 
 ////Как ещё можно?
