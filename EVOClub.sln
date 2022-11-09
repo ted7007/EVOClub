@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework1", "Homework1\Home
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryExample", "MemoryExample\MemoryExample.csproj", "{562485CD-E361-4F79-B2B3-73C941750406}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_Theory", "Methods_Theory\Methods_Theory.csproj", "{20A4B7D5-315A-4BDE-90A0-16C4D06AF42F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{562485CD-E361-4F79-B2B3-73C941750406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{562485CD-E361-4F79-B2B3-73C941750406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{562485CD-E361-4F79-B2B3-73C941750406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A4B7D5-315A-4BDE-90A0-16C4D06AF42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A4B7D5-315A-4BDE-90A0-16C4D06AF42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A4B7D5-315A-4BDE-90A0-16C4D06AF42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A4B7D5-315A-4BDE-90A0-16C4D06AF42F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{E89F7A43-2639-4B4A-8BD2-5F94B3BD3B45} = {49002AE8-B178-4DD3-8A1F-4AB7C55F8E76}
 		{F066DEE1-B57A-4047-BC0B-C8E28F48C5DB} = {49002AE8-B178-4DD3-8A1F-4AB7C55F8E76}
 		{D42CD923-C6CD-4CC1-BD5C-507B78639D53} = {D58BF4CE-9543-4BA8-9DFE-C4E7DC793321}
+		{20A4B7D5-315A-4BDE-90A0-16C4D06AF42F} = {49002AE8-B178-4DD3-8A1F-4AB7C55F8E76}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BA1FEE6-3B08-4AF0-A55B-506FD27F2D2D}
