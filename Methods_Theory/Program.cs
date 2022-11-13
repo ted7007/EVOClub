@@ -33,30 +33,33 @@ Console.WriteLine("bye programs in main :(");
 
 
 #region  examples without return
-
-// void SayHello()
-// {
-//     Console.WriteLine("Hello");
-// }
 //
-// SayHello();
+// string SayHello()
+// {
+//     //Console.WriteLine("Hello");
+//     return "Hello";
+// }
+// // Console.WriteLine("Hello");
+// // SayHello();
+// // SayHello();
+//
 //
 // void PrintMessage(string message)
 // {
 //     Console.WriteLine(message);
 // }
-// // PrintMessage(10);
-// // PrintMessage($"{SayHello()} Functional programming");
-//    PrintMessage($"Hello functional programming");
-//
+//  //PrintMessage(10);
+//  PrintMessage($"{SayHello()} Functional programming");
+   //PrintMessage($"Hello functional programming");
+
 // void Sum(int x, int y)
 // {
 //     int result = x + y;
 //     Console.WriteLine($"{x} + {y} = {result}");
 // }
-// //  Sum(10, "1327");
+//   Sum(10, int.Parse("1327"));
 //     Sum(10, 1327);
-//
+
 // void PrintPerson(string name, int age = 1, string company = "Undefined")
 // {
 //     Console.WriteLine($"Name: {name}  Age: {age}  Company: {company}");
@@ -72,21 +75,22 @@ Console.WriteLine("bye programs in main :(");
 //
 // string GetMessage()
 // {
-//     return "Hello";
+//     return Console.ReadLine();
 // }
 //
 // string getMessageRes = GetMessage();
-// /*
+
 // string GetMessage2()
 // {
 //     Console.WriteLine("Hello");
+//     return "Hello2";
 // }
 //
 // string GetMessage3()
 // {
-//     return 3;   /
+//     return Convert.ToString(3);   
 // }
-// */
+//
 // int Sum(int x, int y)
 // {
 //     return x + y;
@@ -110,16 +114,17 @@ Console.WriteLine("bye programs in main :(");
 #endregion
 
 #region Example with reference , out argument
-//                                refs:
-// void Increment(int n)
+                             //  refs:
+// int Increment(int n)
 // {
 //     n++;
 //     Console.WriteLine($"Число в методе Increment: {n}");
+//     return n;
 // }
 //  
 // int number = 5;
 // Console.WriteLine($"Число до метода Increment: {number}");
-// Increment(number);
+// number = Increment(number);
 // Console.WriteLine($"Число после метода Increment: {number}");
 //
 // void Increment(ref int n)
@@ -137,7 +142,7 @@ Console.WriteLine("bye programs in main :(");
 // bool isSucces = int.TryParse("10", out result);
 // Console.WriteLine(result); // 10
 // Console.WriteLine(isSucces); // true
-// void Sum(int x, int y, out int result)
+// void Sum(int x, int y out int result)
 // {
 //     result = x + y;
 // }
@@ -154,13 +159,15 @@ Console.WriteLine("bye programs in main :(");
 //     rectArea = width * height;       // площадь прямоугольника - произведение ширины на высоту
 //     rectPerimetr = (width + height) * 2; // периметр прямоугольника - сумма длин всех сторон  
 // }
-//
+
 
 
 #endregion
 
 #region Example with param
 
+
+//
 // int Sum(params int[] summands)
 // {
 //     int result = 0;
@@ -169,21 +176,26 @@ Console.WriteLine("bye programs in main :(");
 //     return result;
 // }
 //
+// Sum(1, 2, 2, 2, 2, 2);
 // Sum(1, 2, 4);
 // Sum(new int[] { 1, 5, 7, 10 });
+//
 // Console.WriteLine(Sum());
 
 #endregion
 
 #region Example with recursion
 
-// long GetFactorial(long n)
-// {
-//     if (n == 1 || n == 0)
-//         return 1;
-//     return n * GetFactorial(n - 1);
-// }
-//
-// GetFactorial(4); // посмотреть в дебаге
+long GetFactorial(long n)
+{
+    if (n == 1 || n == 0)
+        return 1;
+    long result;
+    result = GetFactorial(n - 1);
+    result = result * n;
+    return result;
+}
+
+GetFactorial(4); // посмотреть в дебаге
 
 #endregion
