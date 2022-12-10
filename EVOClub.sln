@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice1", "Practice1", "{D58BF4CE-9543-4BA8-9DFE-C4E7DC793321}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundament", "Fundament", "{D58BF4CE-9543-4BA8-9DFE-C4E7DC793321}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice1_Converting", "Examples\Converting\Practice1_Converting.csproj", "{0E888C97-8B28-47BC-8420-10AD72428C77}"
 EndProject
@@ -27,15 +27,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods_Practise", "Example
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structs", "Structs", "{BFBD4717-27C4-4F1A-ACF6-579481A7D30D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_Theory", "Structs_Theory\Structs_Theory.csproj", "{D4E8F897-E175-4B54-8C83-9518E8D7A860}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_Theory", "Examples\Structs_Theory\Structs_Theory.csproj", "{D4E8F897-E175-4B54-8C83-9518E8D7A860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_1", "Structs_1\Structs_1.csproj", "{4F225AB1-D357-429C-85E8-AF78A1287C00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_1", "Examples\Structs_1\Structs_1.csproj", "{4F225AB1-D357-429C-85E8-AF78A1287C00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_2", "Structs_2\Structs_2.csproj", "{43C5ADAE-487C-4752-B9ED-9F295B39F8E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_2", "Examples\Structs_2\Structs_2.csproj", "{43C5ADAE-487C-4752-B9ED-9F295B39F8E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_Practise", "Structs_Practise\Structs_Practise.csproj", "{62B7361A-DED7-4061-81D3-77E52ADE671E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_Practise", "Examples\Structs_Practise\Structs_Practise.csproj", "{62B7361A-DED7-4061-81D3-77E52ADE671E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct_Incapsulation", "Struct_Incapsulation\Struct_Incapsulation.csproj", "{63A49D25-2BCD-42BD-A7BA-F54A800065A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Struct_Incapsulation", "Examples\Struct_Incapsulation\Struct_Incapsulation.csproj", "{63A49D25-2BCD-42BD-A7BA-F54A800065A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundament", "Examples\Fundament\Fundament.csproj", "{73948E15-A8C9-4612-AC12-4EE1C0FCCE58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{63A49D25-2BCD-42BD-A7BA-F54A800065A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63A49D25-2BCD-42BD-A7BA-F54A800065A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63A49D25-2BCD-42BD-A7BA-F54A800065A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73948E15-A8C9-4612-AC12-4EE1C0FCCE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73948E15-A8C9-4612-AC12-4EE1C0FCCE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73948E15-A8C9-4612-AC12-4EE1C0FCCE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73948E15-A8C9-4612-AC12-4EE1C0FCCE58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{43C5ADAE-487C-4752-B9ED-9F295B39F8E1} = {BFBD4717-27C4-4F1A-ACF6-579481A7D30D}
 		{62B7361A-DED7-4061-81D3-77E52ADE671E} = {BFBD4717-27C4-4F1A-ACF6-579481A7D30D}
 		{63A49D25-2BCD-42BD-A7BA-F54A800065A3} = {BFBD4717-27C4-4F1A-ACF6-579481A7D30D}
+		{73948E15-A8C9-4612-AC12-4EE1C0FCCE58} = {D58BF4CE-9543-4BA8-9DFE-C4E7DC793321}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BA1FEE6-3B08-4AF0-A55B-506FD27F2D2D}

@@ -1,47 +1,47 @@
-﻿
+﻿using System.Threading.Channels;
+
 #region Theory
-//
-// /*
-//    Структуры - механизм в c#, способный объединять в себе состояние и поведение
-//    Другими словами - используя структуры, мы можем группировать информацию в одном объекте и работать конкретно с объектом
-//    *Структура отличается от класса тем, как она хранится в памяти!
-//
-//   Определение структуры:
-//   struct имя_структуры
-//   {
-//         Состояние и поведение структуры
-//   }
-// */
-//
-// // Состояние, например, банковского счета
-// string ClientName;
-// decimal balance;
-// float depositeRate;
-// // Поведение такого же банковского счета
-// void PutOnBalance(decimal sum)
-// {
-//     // ..реализация пополнения счета
-// }
-//
-// bool TakeFromBalance(decimal sum)
-// {
-//     // ..реализация списывания со счета
-//     return true;
-// }
-//
+
+/*
+   Структуры - механизм в c#, способный объединять в себе состояние и поведение
+   Другими словами - используя структуры, мы можем группировать информацию в одном объекте и работать конкретно с объектом
+   *Структура отличается от класса тем, как она хранится в памяти!
+
+  Определение структуры:
+  struct имя_структуры
+  {
+        Состояние и поведение структуры
+  }
+*/
+
+// Состояние, например, банковского счета
+string ClientName;
+decimal balance;
+float depositeRate;
+
+// Поведение такого же банковского счета
+void PutOnBalance(decimal sum)
+{
+    // ..реализация пополнения счета
+}
+
+bool TakeFromBalance(decimal sum)
+{
+    // ..реализация списывания со счета
+    return true;
+}
+
 // Поле - переменная, которая используется внутри объектов
 
 #endregion
 
 #region Example
 
-using System.Threading.Channels;
 
-// Person Mike ;
-// Mike.age;
 
-// Инициализация
-Person Mike = new Person();
+ Person Mike = new Person();
+ var a = Mike.Age;  
+
 
 
 
@@ -83,28 +83,26 @@ Person Mike = new Person();
 
 //Mike = new Person(); // Вызываем собственный конструктор по умолчанию
 //Console.WriteLine(Mike.GetString());
-
-Mike = new Person("Mike", 18);              // Конструктор с параметрами
-Console.WriteLine(Mike.GetString());
-
-Mike = new Person("Mike");                  // Конструктор с дефолтными параметрами
-Console.WriteLine(Mike.GetString());
-
-Mike = new Person();                             // Конструктор с дефолтными параметрами   (или нет?)
-Console.WriteLine(Mike.GetString());
+//
+// Mike = new Person("Mike", 18);              // Конструктор с параметрами
+// Console.WriteLine(Mike.GetString());
+//
+// Mike = new Person("Mike");                  // Конструктор с дефолтными параметрами
+// Console.WriteLine(Mike.GetString());
+//
+// Mike = new Person();                             // Конструктор с дефолтными параметрами   (или нет?)
+// Console.WriteLine(Mike.GetString());
 
 #endregion
 
-Mike = new Person("Mike", 18);
-Mike = new Person()
-{
-    Age = 18,
-    Name = "Mike"
-};
+// Mike = new Person("Mike", 18);
+// Mike = new Person()
+// {
+//     Age = 18,
+//     Name = "Mike"
+// };
 
 Console.ReadKey();
-
-
 
 
 struct Person
@@ -112,6 +110,22 @@ struct Person
     public string Name;    // Публичные поля
     public int Age;
 
+    #region properties
+
+    // public string Name
+    // {
+    //     get { return _name;}
+    //     set { _name = value; }
+    // }
+    //
+    // public int Age 
+    // {
+    //     get { return _age; }
+    //     set { _age = value; } 
+    // }
+
+    #endregion
+    
     #region private fields
 
         // private string name;
@@ -145,11 +159,11 @@ struct Person
     //     Name = name;
     // }
     
-    public Person(string name="Unnamed", int age=0)
-    {
-        Age = age;
-        Name = name;
-    }
+    // public Person(string name="Unnamed", int age=0)
+    // {
+    //     Age = age;
+    //     Name = name;
+    // }
     
     #endregion
     
